@@ -1,0 +1,13 @@
+{
+global:
+    extern "C++" {
+        taichi::*;
+    };
+    extern "C" {
+        Py*;
+    };
+local:
+    extern "C" {
+        *;
+    };
+};

@@ -1,0 +1,7 @@
+*.pyc
+*/__pycache__
+log*
+err*
+*.ini
+*/outputs/*
+*.so

@@ -1,8 +1,8 @@
 # Automatic Quantization for Physics-Based Simulation (SIGGRAPH 2022)
-*Automatically gernerate quantization schemes for quantized simulations*
+Jiafeng Liu*, Haoyang Shi*, Siyuan Zhang, Yin Yang, Chongyang Ma and Weiwei Xu
 
 ![teaser](pics/teaser.png)
-
+## Automatically gernerate quantization schemes for quantized simulations
 ### Abstract
 Quantization has proven effective in high-resolution and large-scale simulations, which benefit from bit-level memory saving. However, identifying a quantization scheme that meets the requirement of both precision and memory efficiency requires trial and error. In this paper, we propose a novel framework to allow users to obtain a quantization scheme by simply specifying either an error bound or a memory compression rate. Based on the error propagation theory, our method takes advantage of auto-diff to estimate the contributions of each quantization operation to the total error. We formulate the task as a constrained optimization problem, which can be efficiently solved with analytical formulas derived for the linearized objective function. Our workflow extends the Taichi compiler and introduces dithering to improve the precision of quantized simulations. We demonstrate the generality and efficiency of our method via several challenging examples of physics-based simulation, which achieves up to 2.5x memory compression without noticeable degradation of visual quality in the results.
 
